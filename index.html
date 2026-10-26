@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academic Horizons</title>
+    <meta
+      name="description"
+      content="Academic website with a learning game and customizable section backgrounds."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand">
+          <div class="brand-mark">AH</div>
+          <span>ANAPHY GROUP 3</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#programs">Organs</a>
+          <a href="#game">Game</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a class="nav-button" href="#game">Play Now</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section-bg" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Male Reproductive System</p>
+            <h1>Learn the body with fun and confidence.</h1>
+            <p class="hero-text">
+              Explore the main parts and functions of the male reproductive system through a
+              colorful and interactive learning experience designed for students.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-btn" href="#programs">View Organs</a>
+              <a class="secondary-btn" href="#game">Try the Match Game</a>
+            </div>
+
+            <div class="hero-stats">
+              <div>
+                <strong>4</strong>
+                <span>Main organs</span>
+              </div>
+              <div>
+                <strong>15</strong>
+                <span>Study matches</span>
+              </div>
+              <div>
+                <strong>100%</strong>
+                <span>Ready to learn</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <div class="mini-panel">
+              <span class="pill">Today’s Focus</span>
+              <h3>Male Reproductive System</h3>
+              <ul>
+                <li>Testes</li>
+                <li>Epididymis</li>
+                <li>Vas Deferens</li>
+                <li>Penis</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-section" id="about">
+        <div class="container section-heading">
+          <p class="eyebrow dark">About the lesson</p>
+          <h2>Discover the important parts of the male body</h2>
+        </div>
+
+        <div class="container cards-grid">
+          <article class="feature-card">
+            <div class="icon">01</div>
+            <h3>Produce sperm</h3>
+            <p>
+              The male reproductive system helps create and carry reproductive cells.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon">02</div>
+            <h3>Support function</h3>
+            <p>
+              Each organ has a specific role in reproduction, protection, and transport.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon">03</div>
+            <h3>Learn clearly</h3>
+            <p>
+              Matching activities make the lesson easier to remember and review anytime.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="programs section-bg alt-bg" id="programs">
+        <div class="container section-heading light">
+          <p class="eyebrow">Main organs</p>
+          <h2>The 4 key organs</h2>
+        </div>
+
+        <div class="container programs-grid">
+          <div class="subject-card">
+            <span>Organ 1</span>
+            <h3>Testes</h3>
+            <p>Produce sperm and male hormones such as testosterone.</p>
+          </div>
+
+          <div class="subject-card">
+            <span>Organ 2</span>
+            <h3>Epididymis</h3>
+            <p>Stores and matures sperm before they are released.</p>
+          </div>
+
+          <div class="subject-card">
+            <span>Organ 3</span>
+            <h3>Vas Deferens</h3>
+            <p>Carries sperm from the epididymis toward the urethra.</p>
+          </div>
+
+          <div class="subject-card">
+            <span>Organ 4</span>
+            <h3>Penis</h3>
+            <p>Delivers sperm during reproduction and helps in urination.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="game-section" id="game">
+        <div class="container section-heading">
+          <p class="eyebrow dark">Academic game</p>
+          <h2>Match the parts and functions</h2>
+        </div>
+
+        <div class="container match-game">
+          <div class="game-panel">
+            <div class="game-header">
+              <h3>Matching Game</h3>
+              <button id="resetGame" class="ghost-btn">Reset</button>
+            </div>
+
+            <div class="score-row">
+              <span>Matches: <strong id="matchCount">0</strong>/15</span>
+              <span id="gameStatus">Choose a term first</span>
+            </div>
+
+            <div class="game-board">
+              <div class="game-column" id="termsColumn"></div>
+              <div class="game-column" id="definitionsColumn"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="container contact-wrap">
+          <div class="contact-copy">
+            <p class="eyebrow dark">Connect with us</p>
+            <h2>Study with energy and curiosity</h2>
+            <p>
+              This lesson is designed to help students learn the male reproductive system in a
+              fun, colorful, and memorable way.
+            </p>
+          </div>
+
+          <form class="contact-form">
+            <input type="text" placeholder="Your name" aria-label="Your name" />
+            <input type="email" placeholder="Your email" aria-label="Your email" />
+            <textarea placeholder="Message" aria-label="Message"></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© 2026 ANAPHY GROUP 3</p>
+        <p>Fun learning for every student</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
